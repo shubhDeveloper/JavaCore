@@ -34,7 +34,9 @@ class B extends A
 
 // Single inheritance ------- when a class inherits another class is called single inheritance
 
-//SINGLE INHERITANCE + METHOD OVERRIDING
+//SINGLE INHERITANCE + METHOD OVERRIDING + MULTILEVEL INHERITANCE
+
+/*
 
 class Animal
 {
@@ -66,15 +68,52 @@ class Cat extends Dog
     	System.out.println("cat drink milk");
     }
 }
+*/
+//_____________________________________________________________________________________
 
+//HIERARCHICAL INHERITANCE
 
+//when two or more classes inherits a single class called hierarchical inheritance
+/*
 
+class Animal
+{
+    public Animal() {
+		System.out.println("animal class called");
+	}	
+    void eat()
+    {
+    	System.out.println("Animal eats many foods ");
+    }    
+}
+class Bird extends Animal
+{
+	public Bird() {
+		System.out.println("bird feeds beans");
+	}
+	void eat() 
+	{
+		System.out.println("bird eat beans");
+	}
+}
+class Tiger extends Animal
+{
+	public Tiger() {
+         System.out.println("tiger is a king of forest");
+	}
+	void eat()
+	{
+		System.out.println("tiger eats nothing ");
+	}
+}
+
+*/
 
 //_______________________________________________________________________________________
 
 
 
-public class Inheritance_IsA_Rel extends Cat //extends B
+public class Inheritance_IsA_Rel //extends Cat //extends B
 {	
 	public static void main(String[] args) {
         
@@ -83,10 +122,19 @@ public class Inheritance_IsA_Rel extends Cat //extends B
 //		Inheritance_IsA_Rel rels=new Inheritance_IsA_Rel();
 //      rels.go();
 		
+//		SIMPLE AND MULTILEVEL
+		
 //		Inheritance_IsA_Rel rels = new Inheritance_IsA_Rel();
 //		rels.eat(); //cat drink milk
 //		rels.eat("mangoes");
 		
+//		HIERARCHICAL INHERITANCE
+		
+//	   Bird bird = new Bird();
+//	   Tiger tiger = new Tiger();
+//	   bird.eat();
+//	   tiger.eat();
+	  
 	}
 
 }
