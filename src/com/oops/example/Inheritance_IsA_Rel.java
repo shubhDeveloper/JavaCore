@@ -83,9 +83,9 @@ public class Inheritance_IsA_Rel extends Cat //extends B
 //		Inheritance_IsA_Rel rels=new Inheritance_IsA_Rel();
 //      rels.go();
 		
-		Inheritance_IsA_Rel rels = new Inheritance_IsA_Rel();
-		rels.eat();
-		rels.eat("mangoes");
+//		Inheritance_IsA_Rel rels = new Inheritance_IsA_Rel();
+//		rels.eat(); //cat drink milk
+//		rels.eat("mangoes");
 		
 	}
 
