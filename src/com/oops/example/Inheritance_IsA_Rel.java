@@ -134,6 +134,7 @@ public class Inheritance_IsA_Rel //extends Cat //extends B
 //	   Tiger tiger = new Tiger();
 //	   bird.eat();
 //	   tiger.eat();
+//		bird.eat();
 	  
 	}
 
