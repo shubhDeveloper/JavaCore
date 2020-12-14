@@ -36,7 +36,7 @@ class B extends A
 
 //SINGLE INHERITANCE + METHOD OVERRIDING + MULTILEVEL INHERITANCE
 
-/*
+
 
 class Animal
 {
@@ -68,7 +68,7 @@ class Cat extends Dog
     	System.out.println("cat drink milk");
     }
 }
-*/
+
 //_____________________________________________________________________________________
 
 //HIERARCHICAL INHERITANCE
@@ -113,7 +113,7 @@ class Tiger extends Animal
 
 
 
-public class Inheritance_IsA_Rel //extends Cat //extends B
+public class Inheritance_IsA_Rel extends Cat //extends B
 {	
 	public static void main(String[] args) {
         
@@ -124,9 +124,9 @@ public class Inheritance_IsA_Rel //extends Cat //extends B
 		
 //		SIMPLE AND MULTILEVEL
 		
-//		Inheritance_IsA_Rel rels = new Inheritance_IsA_Rel();
-//		rels.eat(); //cat drink milk
-//		rels.eat("mangoes");
+		Inheritance_IsA_Rel rels = new Inheritance_IsA_Rel();
+		rels.eat(); //cat drink milk
+		rels.eat("mangoes");
 		
 //		HIERARCHICAL INHERITANCE
 		
