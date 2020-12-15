@@ -5,7 +5,7 @@ class Employee
 {
     static int empId;
 	static String empName;
-	//sapouse many employee have a same company so we can declare this. this type of coading menage our memory 
+//    sapouse many employee have a same company so we can declare this. this type of coading menage our memory 
 //	  menage our memory
 	static String empCompany="infosys";
 	
