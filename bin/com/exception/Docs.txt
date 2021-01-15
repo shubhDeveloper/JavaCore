@@ -1,0 +1,64 @@
+>>> Exception = An exception is an unwanted or unexpected event which occur during the excution
+-- Of program i.e runtime that disturb the normal flow of program
+
+>>> Throwable class is the parent class of exception
+
+>>> Diffrence between Exception and errors
+
+>>> Exception >>>>>>>>>>>>>>>>>>>>>>>>>>
+
+1) In most of the cases exception occured by our program
+2) Exceptions are recoverable
+3) Exceptions are mainly 2 types 1)checked exception 2) unchecked Exception
+
+
+>> Errors >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+1) Most of the cases errors occurs because of lack of our system resorces not out program
+2) Errors are not recoverable
+3) Errors only one type 1) unchecked errors
+
+>> Checked and unchecked exception >>>>>>>>>>>>>
+
+-- Checked Exception =: checked exceptions are the exceptions that are checked and handeled at runtime
+-- Unchecked Exception =: Unchecked exceptions are the exceptions that are not checked and handeled at compile time
+
+>> We can handel exception using 5 keywords >>>>>>>>>>
+
+ 1) try 2) catch 3) finally 4) throw 5) throws
+
+ 1)------------:: try and catch syntax ::---------------
+ 
+ try
+ {
+     // Risky code
+ }
+ catch(Exception class name or reference var name)
+ {
+    //handling code 
+ }
+ 
+ 
+ ** We have three ways to print exception
+ 1) e.printStackTrace = This method print all about exception
+ 2) e.toString() = print
+ 3) e.getMessage() = print onlu exception discreption
+ 
+ 
+ *****************Diffrence between throw and throws********************
+ 
+ 1) throws keyword is used to declare the exception i.e. it indicates the caller method that given exception can occur so 
+ we have to handel it eather using try catch block or again declare it by using throws keyword
+ 
+ 2) throw keyword is mainly used for runtime exceptions or unchecked exceptions but throws keyword mainly used for compile
+ time exceptions or checked exceptions
+ 
+ 3) In case of throw keyword we can throw only single exception but in case of throws keyword we can declared multiople 
+ exceptions ex. void readFile() throws FileNotFoundException, NullPointerException
+ 
+ 4) Throw keyword is used with the method but throws keyword is used with method signature 
+ 
+ 5) Throw keyword is followed by new instance i.e object but throws keyword is followed by class not with the instance
+ 
+ 6) we can not write any statement after throw keyword thus it can be used to break the statement but there is no rule for 
+ throws keyword
