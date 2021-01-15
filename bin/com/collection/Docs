@@ -1,0 +1,16 @@
+Collection = ::::_____________________________
+
+* If we want to represent a group of individual objects as a single entity then we should go for collection.
+
+Collection interface = :::: _________________________
+
+* Collection interface is the interface which is implemented by all the classes in the collection frameword
+* Collection interface define the most common methods are applicable for any collection object 
+* Methods : 1) Boolean add(Object obj)   2) Boolean addAll(Collection c)   3) void clear()
+
+Diffrence between collection and collections =:::::::_________________________
+
+* collection is an interface which can be used to represent a group of individual objects as a single entity.
+* collections is an class present in java.util package to define several utility method like (searching,sorting) for 
+  collection object.
+  
