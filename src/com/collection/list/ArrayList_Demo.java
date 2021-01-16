@@ -7,7 +7,7 @@ import java.util.Iterator;
 
 ArrayList : 
 
-* The Underlined data structure resizable array or growable array.
+* The Underlying data structure resizable array or growable array.
 * Duplicates are allowed
 * Null insertion is possible
 * Best for retrive data because it is implement RandomAccess interface
@@ -19,7 +19,7 @@ ________________________________________________________________________________
 
 public class ArrayList_Demo {
 
-	void method1()
+	void multipleDataType()
 	{
 		//Insert any type of data
 	    ArrayList list = new ArrayList();
@@ -38,7 +38,7 @@ public class ArrayList_Demo {
 		        	
 	}
 	
-	void method2()
+	void singleDataType()
 	{
 		
 		//insert only one type of data
@@ -59,11 +59,35 @@ public class ArrayList_Demo {
 		
 	}
 	
+	void objectDataType()
+	{
+		
+		//Create object of StudentObj
+		StudentObj stdObj = new StudentObj(123, "shubham", "panchal", "12th", "shujalpur");
+		StudentObj stdObj2 = new StudentObj(12345, "Ram", "Nema", "11th", "indore");
+		
+		//Crate Array List
+		ArrayList<StudentObj> stdList = new ArrayList<StudentObj>();
+		
+		//Add Objects in ArrayList
+		stdList.add(stdObj);
+		stdList.add(stdObj2);
+		
+		//Iterate Object Elements
+		Iterator<StudentObj> ob = stdList.iterator();
+		while(ob.hasNext()) {
+			System.out.println(ob.next());
+		}
+		
+	}
+	
 	public static void main(String[] args) {
 		
 		ArrayList_Demo arr = new ArrayList_Demo();
-//		arr.method1();
-		arr.method2();
+//        arr.singleDataType();
+//		  arr.multipleDataType();
+		  arr.objectDataType();
+		
 	}
 
 }
