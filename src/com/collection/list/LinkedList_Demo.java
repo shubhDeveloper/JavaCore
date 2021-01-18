@@ -35,9 +35,10 @@ public class LinkedList_Demo {
 //		list.addFirst("mohan");                    // add elements in index 0
 //		list.addLast("vikas");                     // add elements in last index  
 		
-		System.out.println(list.getLast());        // Get last element of list
-		System.out.println(list.getFirst());       // Get First element of list
-		System.out.println(list.getClass());       // Return class name
+		System.out.println(list);
+//		System.out.println(list.getLast());        // Get last element of list
+//		System.out.println(list.getFirst());       // Get First element of list
+//		System.out.println(list.getClass());       // Return class name
 	
 
 	}
@@ -86,8 +87,8 @@ public class LinkedList_Demo {
 	public static void main(String[] args) {
 		
 		LinkedList_Demo li = new LinkedList_Demo();
-		li.addObject();
-//		li.addAndget();		
+//		li.addObject();
+		li.addAndget();		
 	}
 
 }
