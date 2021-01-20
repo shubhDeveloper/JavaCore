@@ -51,6 +51,8 @@ public class ArrayList_Demo {
 		list.add("neetu");
 		list.add(null);
 		
+		System.out.println(list);
+		
 //		Iterate Using for each loop
 		for(String string : list) {
 			
