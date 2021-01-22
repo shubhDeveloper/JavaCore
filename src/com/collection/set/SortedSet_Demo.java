@@ -41,6 +41,14 @@ public class SortedSet_Demo {
 
 	public static void main(String[] args) {
 		
+		Pizza pizza = new Pizza();
+		pizza.setPizzaPrice(123);
+		pizza.setPizzaBrand("kfc");
+		
+		SortedSet<Pizza> set = new TreeSet<Pizza>();
+		set.add(pizza); //throw classCastException bcz heterogeneous objcts are not allowed
+		/*
+		
 		SortedSet<String> set = new TreeSet<>();
 		set.add("mohan");
 		set.add("sohan");
@@ -51,6 +59,8 @@ public class SortedSet_Demo {
 		set.add("vaishali");
 		set.add("marry");
 		
+		
+		
 		System.out.println(set);                             // prent all elements some alphabetical order
 		System.out.println(set.first());                     // return marry
 		System.out.println(set.last());                      // return vikas
@@ -59,5 +69,6 @@ public class SortedSet_Demo {
 		System.out.println(set.subSet("shubham", "vikas"));  // return [shubham , sohan ,vaishali]
         System.out.println(set.comparator());                // null
 		
+		*/
 	}
 }
